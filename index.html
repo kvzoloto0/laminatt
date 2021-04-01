@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Vlaminat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="container containerFixed">
+        <div class="fixedNavigation d-none d-lg-flex">
+            <div class="markNavigation iconWrapper">
+                <img src="icons/mark.svg">
+            </div>
+            <a href="#" class="textNavigation">показати на мапі</a>
+            <div class="navigationPhoneCell">
+                <div class="phoneNavigation iconWrapper">
+                    <img src="./icons/phone.svg">
+                </div>
+                <div class="textNavigation">050 915 2254</div>
+            </div>
+            <div class="navigationPhoneCell">
+                <div class="phoneNavigation iconWrapper">
+                    <img src="./icons/phone.svg">
+                </div>
+                <div class="textNavigation">096 053 0420</div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <!--col-8 from 320 to 768 logo-->
+            <div class="col-8 d-block d-sm-none">
+                <div class="logoBlock">   
+                    <img class="logoL" src="icons/logoL.svg">      
+                    <div class="logoBlockVandText">                                              
+                        <img class="logoV" src="icons/logoV.svg">
+                        <div class="blockWithTextV">italii</div>
+                        <div class="blockWithTextL">
+                            амінат
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--col-4 from 768 to ..logo-->
+            <div class="col-4 d-none d-sm-block">
+                <div class="logoBlock">   
+                    <img class="logoL" src="icons/logoL.svg">      
+                    <div class="logoBlockVandText">                                              
+                        <img class="logoV" src="icons/logoV.svg">
+                        <div class="blockWithTextV">italii</div>
+                        <div class="blockWithTextL">
+                            амінат
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--col-4 from 320 to 768 navburger navigation-->
+            <div class="col-4 d-block d-sm-none">
+                <div class="overlay overlayMenu">
+                        <ul role="menu">
+                            <li><a href="#Sale" role="menuitem">Акції</a></li>
+                            <li><a href="#catolog" role="menuitem">Каталог</a></li>
+                            <li><a href="#reviews" role="menuitem">Відгуки</a></li>
+                            <li><a href="#brands" role="menuitem">Бренди</a></li>
+                            <li><a href="#contacts" role="menuitem">Як замовити</a></li>
+                        </ul>
+                        <div class="phoneBlock">
+                            <span>050 915 2254</span>
+                            <br>
+                            <span>096 053 0420</span>
+                        </div>
+                        <br>
+                        <div class="locationBlockOverlay">
+                            <span class="locationText">Склад</span>: Селезнівська 12.
+                            <br>
+                            <span class="locationText">Магазин</span>: калинівський ринок: сектор 1 контейнер 664, 665.
+                        </div>
+                </div>
+                <div class="navBurger" role="navigation" id="navToggle" class="lock-scroll" onclick="lockScroll();"></div>
+            </div>
+            <!--col-8 from 768 to ..navburger navigation-->
+            <div class="col-8 d-none d-sm-block"> 
+                <div class="row navMenu">
+                    <a href="#catolog" class="col">каталог</a>
+                    <a href="#Sale" class="col">акції</a>
+                    <a href="#reviews" class="col">відгуки</a>
+                    <a href="#brands" class="col">бренди </a>    
+                    <a href="#contacts" class="col">контакти</a>
+                </div> 
+            </div>    
+        </div>
+    </header>
+<section class="container containerFixed">
+    <div class="row" style="position: relative;">
+        <div class="col-sm-12 col-xxl-11 provideChernivtsi">
+            <span class="colorLetter">З</span>абезпечуєм чернівчан якісною підлогою
+            <div class="contentText contentTextH3">
+               <div>Ламінат на буковині ще не бував<br class="d-none d-xl-block d-xxl-none"> таким<br class="d-none d-md-block d-xxl-block d-lg-none"> доступним.</div>
+               <div class="spaceAndText">
+                   <span class="colorLetter">—</span> Скидки та бонуси
+                   <br>
+                   <span class="colorLetter">—</span> Бренди визнані Європою
+                   <br>
+                   <span class="colorLetter">—</span> Якісне обслуговування клієнтів
+               </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-xxl-1">
+            <img class="mother_with_child" src="img/mother_with_child.jpg">
+        </div>
+    </div>
+</section> 
+<div class="container containerFixed">
+    <div class="row buttonMargin">
+       <button type="button" class="btn btn-outline-warning quickConsultation1">
+            <label for="popupCheckboxOne" class="popupCheckboxOne">
+                <div class="quickConsultationText1">Швидка консультація</div>
+                <img class="phone_icon_1" src="icons/buttonPhone.svg">
+            </label>
+       </button>
+    </div>
+    <div class="GoToTheDirectory d-none d-xxl-block">
+        <a href="#catolog" class="GoToTheDirectoryText">Перейти до каталогу...</a>
+    </div>
+</div>
+<div class="container containerFixed">
+    <div class="row row-cols-1">
+        <div class="headlines headlinesOne">   
+            <span class="colorLetter">О</span>сь чому ми
+        </div>
+        <div class="col-md-12 col-xxl-4 col-xl-4 thatsWhyWeBlock1">
+            <img class="thatsWhyWeImg percent" src="icons/percent.svg">
+            <div class="thatsWhyWeText"> 
+                 <span>Найнижчі ціни на підлогу<br>у Чернівецькій області</span>
+            </div>
+        </div>
+        <div class="col-md-12 col-xxl-4 col-xl-4 thatsWhyWeBlock2">      
+            <img class="thatsWhyWeImg percent" src="icons/assortment.svg">
+            <div class="thatsWhyWeText">
+                <span>Широкий асортимент ламінату,<br class="d-none d-xxl-block d-none d-md-block d-lg-none"> паркету, плинтусів</span>
+            </div>
+        </div>
+        <div class="col-md-12 col-xxl-4 col-xl-4 thatsWhyWeBlock3">
+            <img class="thatsWhyWeImg truck" src="icons/truck.svg">
+            <div class="thatsWhyWeText">
+                <div class="textTruck">Доступна доставка по області</div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1">
+        <div class="headlines" id="catolog">
+            <span class="colorLetter">К</span>аталог
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/laminate1.jpg" alt="Laminat"> 
+                <div class="catalogLines">
+                    <span class="catalogText"> My Floor KF 204</span>
+                    <div class="catalogPrices">240 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3"><!--col-xl-3-->
+            <div class="catalogBlock">
+                <img src="img/laminate2.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Egger Дуб світлий EPL 102</span>
+                    <div class="catalogPrices">250 ₴/м2</div>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3"> 
+            <div class="catalogBlock">
+                <img src="img/laminate3.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronotex Деревна фантазія 4779</span>
+                    <div class="catalogPrices">320 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3"> 
+            <div class="catalogBlock">
+                <img src="img/laminate4.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronotex Горіх тоскана D 3070</span>
+                    <div class="catalogPrices">270 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">  
+            <div class="catalogBlock">
+                <img src="img/laminate5.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Swiss Krono 13740</span>
+                    <div class="catalogPrices">220 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/laminate6.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronotex Дуб монтмело кремовий D 3660</span>
+                    <div class="catalogPrices">270 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/laminate7.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">My Floor MV 839</span>
+                    <div class="catalogPrices">350 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/laminate8.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Egger Дуб натуральний білий EPL 085</span>
+                    <div class="catalogPrices">250 ₴/м2</div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="text-center showAllBlock" onclick="style.display='none'">
+        <label for="show" class="showAll">Показати ще...</label>
+    </div>
+    <input type="checkbox" id="show">
+    <div class="fulltext"> 
+        <div class="row row-cols-1">
+            <div class="col-md-6 col-xxl-3 col-xl-3">    
+                <div class="catalogBlock">
+                    <img src="img/laminate9.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">My Floor MV 849</span>
+                        <div class="catalogPrices">350 ₴/м2</div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock twoRow">
+                    <img src="img/laminate10.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">My Floor MV 820</span>
+                        <div class="catalogPrices">350 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock">
+                    <img src="img/laminate11.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">My Floor ML 1008</span>
+                        <div class="catalogPrices">350 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock">
+                    <img src="img/laminate12.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">My Floor MV 821</span>
+                        <div class="catalogPrices">350 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock">
+                    <img src="img/laminate13.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">Egger Дуб Елтон білий EPL 137</span>
+                        <div class="catalogPrices">250 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock">
+                    <img src="img/laminate14.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">Egger Дуб білий EPL 123</span>
+                        <div class="catalogPrices">250 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">     
+                <div class="catalogBlock">
+                    <img src="img/laminate15.jpg" alt="Laminat">
+                    <div class="catalogLines">
+                        <span class="catalogText">Egger Дуб азгіл білий  ELP 153</span>
+                        <div class="catalogPrices">300 ₴/м2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-3 col-xl-3">    
+                <div class="allAtTheAddressBlock">
+                    <div class="allAtTheAddress">Весь асортимент<br> за адресою</div>
+                    <img class="markImg" src="icons/mark.svg">
+                    <div class="additionAddress">калинівський ринок сектор<br> 1 контейнер 664 665</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1">                                                                
+        <div class="headlines" id="Sale">
+            <span class="colorLetter">З</span>нижки від <span class="colorLetter">15%</span>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3"> 
+            <div class="catalogBlock">
+                <img src="img/sale1.jpg" alt="Laminat">                                                                    
+                <div class="catalogLines">
+                    <span class="catalogText">Kronopol Дуб опалений 2740</span>
+                    <div class="catalogPrices">
+                        <span>245 ₴/м2</span>
+                        <span class="lineThrough">
+                            <span class="catalogPricesSale">248₴</span>
+                        </span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/sale2.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronopol Касандра 5375</span>
+                    <div class="catalogPrices">
+                        <span>245 ₴/м2</span>
+                        <span class="lineThrough">
+                            <span class="catalogPricesSale">248₴</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/sale3.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronotex Дуб сірий D 3900</span>
+                    <div class="catalogPrices">
+                        <span>245 ₴/м2</span>
+                        <span class="lineThrough">
+                            <span class="catalogPricesSale">248₴</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-xxl-3 col-xl-3">
+            <div class="catalogBlock">
+                <img src="img/sale4.jpg" alt="Laminat">
+                <div class="catalogLines">
+                    <span class="catalogText">Kronotex Ясен D 3007</span>
+                    <div class="catalogPrices">
+                        <span>245 ₴/м2</span>
+                        <span class="lineThrough">
+                            <span class="catalogPricesSale">248₴</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SaleBlock">                                                                                                           
+            Весь асортимент та знижки за адресою
+            <br><br>
+            <span class="colorLetter">—</span> 
+            <span class="SaleBlockGreyColour">калинівський ринок сектор 1 контейнер 664, 665</span>
+        </div>
+    </div>                                                                                                                                    
+    <div class="headlines" id="brands">                                                         
+        <span class="colorLetter">Б</span>ренди
+    </div>
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-3 col-xl-3 col-xxl-3 brandyLogo">                                                      
+                <img class="brands1" class="rounded" src="icons/brands1.svg">
+            </div>
+            <div class="col-md-3 col-xl-3 col-xxl-3 brandyLogo">
+                <img class="brands2" class="rounded" src="icons/brands2.svg">
+            </div>
+            <div class="col-md-3 col-xl-3 col-xxl-3 brandyLogo">
+                <img class="brands3" src="icons/brands3.svg">
+            </div>
+            <div class="col-md-3 col-xl-3 col-xxl-3 brandyLogo">
+                <img class="brands4" src="icons/brands4.svg">
+            </div>
+        </div>
+    </div>                                                                                                                                     
+    <div class="headlines" id="reviews">    
+        <span class="colorLetter">В</span>ідгуки
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-6 col-xl-4 col-xxl-3">
+            <img class="reviews minimized" src="img/reviews1.jpg">  <!--class="minimized"-->
+        </div>
+        <div class="col-6 col-md-6 col-xl-4 col-xxl-3">
+            <img class="reviews minimized" src="img/reviews2.jpg">
+        </div>  
+    </div>                                                                                                                                                          
+    <div class="headlines" id="contacts">
+        <div class="d-md-none"> 
+            <span class="colorLetter">К</span>онтакти
+        </div>
+        <div class="d-none d-md-block d-xxl-block">
+            <span class="colorLetter">К</span>онтакти для замовлення та консультації
+        </div>
+    </div>
+    <div class="contactsBlock">
+        <div>050 915 2254</div>
+        <div>096 053 0420</div>
+    </div>
+    <div class="row">
+    <div class="col-xxl-4 col-xl-4 order-xl-2 order-xxl-2">
+        <img class="viber" src="icons/viber.svg">
+        <img class="insta" src="icons/insta.svg">
+    </div>
+    <div class="col-xxl-4 col-xl-4 order-xl-3 order-xxl-3">  
+        <button type="button" class="btn btn-outline-warning quickConsultation2">
+            <label for="popupCheckboxOne" class="popupCheckboxOne">
+                <div class="quickConsultationText1">Швидка консультація</div>
+                <img class="phone_icon_1" src="icons/buttonPhone.svg">
+            </label>
+        </button>
+    </div>
+    <div class="col-xxl-4 col-xl-4">
+        <div class="openingHours">
+            Без вихідних з <span class="colorLetter">08:00</span> до <span class="colorLetter">21:00</span>    
+        </div>
+    </div>
+    </div>
+    <div class="row align-items-start line"></div>
+    <div class="mapsText">
+        Магазин: МТК калинівський ринок<br class="d-none d-xxl-block d-xl-block"> сектор 1 контейнер 664, 665.
+    </div>
+</div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4462.744361058746!2d25.962384227402428!3d48.31124261912395!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd1b8db793bdee3bb!2sLaminat%2C%20Plintus%2C%20Pidstylka.!5e0!3m2!1sru!2spl!4v1612542086188!5m2!1sru!2spl" width="100%" height="157px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <div class="container containerFixed">
+        <div class="warehouse">
+            Склад: Селезнівська 12
+        </div>
+    </div>
+    <footer>
+<!--       <img class="footerBackground" src="img/footer1280.png">-->
+        <div class="container containerFixed">
+            <div class="row">
+                <div class="col-md-3 col-xl-3"> <!--col-xxl-6-->
+                    <div class="row row-cols-md-1">
+                            <a class="col-6 linkNavigationFooter linkNavigationFooterFirst" href="#Sale">Акції</a>
+                            <a class="col-6 linkNavigationFooter" href="#brands">Бренди</a>
+                            <a class="col-6 linkNavigationFooter" href="#catolog">Каталог</a>
+                            <a class="col-6 linkNavigationFooter" href="#contacts">Як замовити</a>
+                            <a class="col-5 linkNavigationFooter" href="#reviews">Відгуки</a>
+                    </div>
+                </div>
+                <div class="col-md-9 col-xl-9"><!--col-xxl-6-->
+                    <div class="row row-cols-1">
+                        <div class="col textFooter1">Дзвоніть якщо не знайшли підходящий варіант</div>
+                        <div class="col textFooter2">з 08:00 до 21:00<br class="d-none d-md-block d-lg-none"> без вихідних</div>
+                        <div class="col contactsBlockFooter">
+                            <div>050 915 2254</div>
+                            <div>096 053 0420</div>
+                        </div>
+                    </div>
+                        <button type="button" class="btn btn-outline-warning quickConsultation3">
+                            <label for="popupCheckboxOne" class="popupCheckboxOne">
+                                <div class="quickConsultationText2">Швидка консультація</div>
+                                <img class="phone_icon_1" src="icons/buttonPhone.svg">
+                            </label>
+                        </button> 
+                    <div class="imgFooter">
+                        <img class="viberFooter" src="icons/viber.svg">
+                        <img class="instaFooter" src="icons/insta.svg">
+                    </div>
+<!--delete                    <div class="row-cols-1">-->
+                    <div class="mail">Vlaminat@gmail.com</div>
+<!--delete                    </div>  -->   
+                    <div class="locationBlock d-none d-sm-none d-md-block d-md-none d-lg-block d-lg-none d-xl-block">
+                        <span class="locationText">Склад</span>: Селезнівська 12.
+                        <br >
+                        <span class="locationText">Магазин</span>: МТК калинівський <br class="d-block d-md-none d-xl-none">ринок: сектор 1 контейнер 664, 665.
+                    </div>
+                </div>    
+            </div>
+            <div class="col locationBlock d-xl-none d-xxl-none">
+                <span class="locationText">Склад</span>: Селезнівська 12.
+                <br >
+                <span class="locationText">Магазин</span>: МТК калинівський <br class="d-block d-md-none d-xl-none">ринок: сектор 1 контейнер 664, 665.
+            </div>
+        </div>
+    </footer>
+
+   
+    
+   
+    <div class="container containerFixed">
+        <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+        <div class="popup">
+            <div class="popup-content">
+                <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+                <div class="text-center callYouBack">Ми передзвонимо</div>
+                    <input class="name" name="name" type="text" placeholder="Як до вас звертатись?" 
+                    oninput="this.value=this.value.replace(/[^а-яА-ЯіІ\s]/g,'');" maxlength="40">
+                    <input name="phone" id="phone">
+                <button type="button" class="btn btn-outline-warning quickConsultation">
+                    <div class="confirmText">Підтвердити</div>
+                    <img src="icons/buttonPhone.svg">
+                </button>
+                <div class="textUnderButton">не використовуєм ваші данні для надання реклами</div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    <script src="https://unpkg.com/imask"></script>
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

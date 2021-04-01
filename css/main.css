@@ -1,0 +1,1750 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+body{
+    background: #FFFAF5;
+}
+
+header {
+    padding-top: 1rem;
+    position: relative;
+}
+
+.fixedNavigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    padding: 6px 9px;
+    width: 397px;
+    height: 26px;
+    background: rgba(74, 74, 74, 0.88);
+}
+
+.markNavigation {
+    width: 10px;
+    height: 14px;
+}
+
+.iconWrapper {
+    display: flex;
+}
+
+.textNavigation {
+    margin-left: 4px;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.phoneNavigation {
+    margin-left: 0.625rem;
+    align-items: center;
+}
+
+.navigationPhoneCell {
+    display: flex;
+    margin-left: 1rem;
+}
+
+section {
+    margin-top: 1.3rem;
+}
+
+.fixedNav {
+    padding: 16px;  
+    height: 83px;
+    background: #FFFAF5;
+}
+
+.logoBlock {
+    display: flex;
+}
+
+.logoL {
+    width: 34px;
+    height: 45px;
+}
+
+.logoBlockVandText {
+    display: flex;
+    flex-direction: column;
+}
+
+.blockWithTextL {
+    margin-left: 4px;
+    font-family: 'Comfortaa';
+    font-size: 17px;
+    line-height: 17px;
+    letter-spacing: 0.155em;
+    color: #4A4A4A;
+    opacity: 0.9;
+}
+
+.logoV {   
+    margin-top: 2px;
+    margin-left: -6px;
+    width: 23px;
+    height: 29px;
+}
+
+.blockWithTextV {
+    margin-top: -15px;
+    margin-left: 13px; 
+    font-family: Comfortaa;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.155em;
+    color: #BEBEBE;
+}
+
+.navBurger {   
+    margin-left: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #111;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-clip: content-box;
+    width: 35px;
+    height: 24px;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.navBurger:before, .navBurger:after {
+    content: "";
+    position: absolute;
+    background: #111;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    will-change: rotate;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.navBurger:before {
+    top: -10px; 
+}
+
+.navBurger:after {
+    bottom: -10px;   
+}
+
+.navBurger.active {
+    top: 10px;
+    right: 30px;
+    position: fixed;
+    background: transparent;
+    background-clip: content-box;    
+    z-index: 15;
+}
+
+.navBurger.active:before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 0;
+    background: #eee;
+    width: 110%;
+}
+
+.navBurger.active:after {
+    bottom: 0;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    background: #eee;
+    width: 110%;
+}
+
+.overlay {
+    position: fixed;
+    background: #4A4A4A;
+    top: 0;
+    right: 0;
+    -webkit-transform-origin: right top;
+          transform-origin: right top;
+    -webkit-transform: scale(0);
+          transform: scale(0);
+    visibility: hidden;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.overlay.open {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.overlay.open li {
+    display: block;
+    -webkit-animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+          animation: fadeInRight 0.4s cubic-bezier(0.42, 0.83, 0.7, 1.5) forwards;
+    -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+    -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+    -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.overlayMenu ul li a {
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 50px;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+.lock-scroll {
+    overflow: hidden;
+}
+
+.phoneBlock {
+    display: inline-block;
+    margin-top: 83px;
+    margin-left: 26px;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #BEBEBE;
+}
+
+.locationBlock {
+    padding: 5px 0;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #E7E7E7;
+}
+
+.locationBlockOverlay {
+    padding: 15px 26px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #E7E7E7;
+}
+
+.navMenu {
+    margin-top: 30px;
+    display: flex;
+}
+
+.navMenu a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}  
+
+.locationText {
+    color: #BEBEBE;
+}     
+                                                                                    
+.provideChernivtsi { 
+    margin-bottom: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+    color: #4A4A4A;
+}
+
+.colorLetter {
+    color: #FFCA0F;
+}
+
+.contentText {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin-top: 1px;
+    margin-bottom: 10px; 
+    line-height: 2.01;
+    font-weight: 400;
+}
+
+.quickConsultation1 {
+    border-width: 3px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: 56px;
+    margin: 16px 16px;
+    background-color: #FFFFFF;	 
+    background:transparent !important;
+}
+
+.quickConsultationText {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: 0.02em;
+}
+
+.quickConsultationText2 {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin: 13px 10px;
+}
+
+.phone_icon {
+    margin-top: -40px;
+    margin-left: 150px;
+}
+
+.percent{
+    width: 34px;
+}
+
+.truck{
+    width: 52px;
+    height: 34px;
+}
+
+.quickConsultationText1 {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: 0.02em;
+    margin: 13px 10px;
+    color: #4A4A4A;
+}
+
+.phone_icon_1 {
+    margin-top: -70px;
+    margin-left: 200px;
+}
+
+.quickConsultation2 {
+    border-width: 3px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin: 15px 0;
+    background-color: #FFFFFF;	 
+    background:transparent !important;
+}
+
+.quickConsultation3 {
+    border-width: 3px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    margin: 16px 0px;	 
+    background:transparent !important;
+}
+
+.headlines {
+    margin-top: 44px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+    color: #4A4A4a;
+}
+
+.mother_with_child{
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+}
+
+.thatsWhyWeText {        
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}
+
+.textTruck {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 250px;
+}
+
+.thatsWhyWeImg {
+    margin-top: 2.25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.catalogBlock {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px; 
+}
+
+.catalogBlock img{
+    display: block;
+    width: 100%;
+    max-height: 99px;
+}
+
+.catalogLines {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: justify;
+    border: 1px solid grey;
+    height: 49px;
+    padding: 0px 8px 0px;
+}
+
+.catalogText {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}
+
+.catalogPrices {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+
+.lineThrough {
+    color: #4A4A4A;
+    text-decoration: line-through;
+}
+
+.showAllBlock{
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 130px;
+    height: 26px;
+    background: #FFF0C7;
+}
+
+.showAll {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+    opacity: 0.8;
+}
+
+input[type="checkbox"], .fulltext {
+    display: none;
+}
+
+input:checked + div {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+}
+
+.catalogPricesSale {
+    margin-left: 32px;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #FFCA0F;
+}
+
+.allAtTheAddressBlock {
+    margin-top: 20px;
+    width: 100%;
+    height: 148px;
+    background: #777777;
+}
+
+.allAtTheAddress {
+    margin-top: 10px;
+    padding-top: 15px;
+    margin-left: 18px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+}
+
+.additionAddress {
+    margin-top: 4px;
+    margin-left: 18px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.markImg {
+    margin-left: 18px;
+}
+
+.SaleBlock {
+    margin-top: 25px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+
+.SaleBlockGreyColour {
+    color: #777777;
+}
+
+.brandyLogo {
+    margin-top: 2.25rem;
+}
+
+.brands1 {
+    width: 132px;
+    height: 31px;
+}
+
+.brands2 {
+    width: 131px;
+    height: 35px;
+}
+
+.brands3{
+    width: 132px;
+    height: 39px;
+}
+
+.brands4{
+    width: 132px;
+    height: 32px;
+}
+
+
+.reviews {
+    width: 132px;
+    height: 234px;
+    margin-top: 28px;
+}
+
+
+.contactsBlock {
+    margin-top: 15px;
+    margin-bottom: 13px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+    color: #4A4A4A;
+    opacity: 0.9;
+}
+
+.viber{
+    width: 27px;
+    height: 29px;
+}
+
+.insta {
+    margin-left: 11px;
+    width: 27px;
+    height: 28px;
+}
+
+.openingHours {
+    margin-top: 10px;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}
+
+.line {
+    margin-top: 8px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-top:1px solid black;
+}
+
+.mapsText {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #4A4A4A;
+}
+
+iframe {
+    margin-top: 8px;
+}
+
+.warehouse {
+    margin-left: 10px;
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #BEBEBE;
+}
+
+footer {
+    background: url(../img/footer1920.png);
+    height: 570px;
+    width: 100%;
+    background-size: cover;
+}
+
+.linkNavigationFooter {
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+}
+
+.linkNavigationFooter:hover {
+    color: #F9B247;
+}
+
+.textFooter1 {
+    margin-top: 33px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+    color: #F9B247;
+}
+
+.textFooter2 {
+    margin-top: 6px;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #BEBEBE;
+}
+
+.contactsBlockFooter {
+    margin-top: 13px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+}
+
+.viberFooter {
+    width: 38px;
+    height: 38px;
+}
+
+.instaFooter {
+    width: 38px;
+    height: 38px;
+    margin-left: 1rem;
+}
+
+.mail {
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFCA0F;
+}
+
+.imgFooter {
+    display: flex;
+    width: 38px;
+    height: 38px;
+}
+
+/*button*/
+.popup-checkbox, .popup {
+    display: none;
+}
+
+.popup {            
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(30px);
+}
+
+.popup-content {
+    width: 100%;
+    height: 403px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #4A4A4A;
+    border: 2px solid #FFFFFF;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.popup-closer {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #999;
+    font-size: 30px;
+    border: 1px solid #999;
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.popup-checkbox:checked + .popup {        
+    opacity: 1; 
+    display: block;
+}
+
+.callYouBack {
+    margin-top: 30px;
+    margin-left: -20px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 10px;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+}
+
+.popup-content input {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #ffffff;
+    font-family: Montserrat;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.name {
+    margin-top: 46px;
+    
+}
+
+.quickConsultation {
+    border-width: 3px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 25px;
+    width: 100%;
+    height: 64px;
+    background-color: #FFFFFF;	 
+    background:transparent !important;
+}
+
+.confirmText {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.013em;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.textUnderButton {
+    margin-top: 20px;
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #BEBEBE;
+}
+
+.popupCheckboxOne {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a[href^=tel] { 
+    color: inherit; 
+}
+
+@media (min-width: 320px) {
+
+
+}
+
+@media (min-width: 768px) { 
+/*
+ .containerFixed{
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+} 
+*/
+#magnify{
+    width: 50%;
+}
+.percent{
+    width: 60px;
+}
+.truck{
+    width: 90px;
+    height: 60px;
+}
+section {
+    margin-top: 3rem;
+}
+.provideChernivtsi {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+}
+.contentText{
+    margin-top: 36px;
+    margin-bottom: 22px;
+    font-size: 22px;
+    letter-spacing: 0.013em;
+}
+
+.mother_with_child{
+    height: 486px;
+    width: 100%;
+}
+
+.quickConsultation1{
+    margin-top: 32px;
+    width: 309px;
+    height: 68px;
+}
+.quickConsultationText1{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.quickConsultation3{
+    padding: 0 10px;
+}
+.quickConsultationText2{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.phone_icon_1{
+    margin-left: 220px;
+    margin-top: -80px;
+}
+.quickConsultation2{
+    width: 309px;
+    height: 68px;
+}   
+.contentTextH3 {
+    line-height: 1.6;
+}  
+.spaceAndText {
+    line-height: 2.6;
+}
+.headlines{
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.07em;
+}   
+.thatsWhyWeText{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}   
+.thatsWhyWeImg{
+    margin-top: 62px;
+}
+.catalogText{
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.catalogPrices{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.catalogBlock{
+    margin-top: 20px;
+    width: 355px;
+    height: 324px;
+}  
+.catalogLines{
+    height: 79px;
+    padding: 3px 10px 0px;
+}
+.catalogBlock img{
+    max-height: 245px;
+}
+.showAllBlock{
+    width: 188px;
+    height: 41px;
+}
+.showAll{
+    padding: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.allAtTheAddressBlock{
+    padding: 0px 20px;
+    width: 355px;
+    height: 324px;
+} 
+.allAtTheAddress{
+    padding: 70px 0px;
+    font-size: 25px;
+}
+.markImg{
+    margin-top: -115px;
+    width: 25px;
+}
+.additionAddress{
+    margin-top: -40px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.SaleBlock{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}   
+.brands1{
+    width: 157px;
+    height: 38px;
+}
+.brands2{
+    width: 156px;
+    height: 42px;
+}
+.brands3{
+    margin-top: -10px;
+    width: 156px;
+    height: 47px;
+}
+.brands4{
+    width: 156px;
+    height: 36px;
+}
+.reviews{
+    width: 330px;
+    height: 631px;
+}
+.contactsBlock{
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.07em;
+}   
+.viber{
+    width: 50px;
+    height: 54px;
+}
+.insta{
+    width: 50px;
+    height: 51px;
+}
+.openingHours{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}
+.mapsText{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}
+.warehouse{
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}
+footer{
+    height: 314px;   
+}
+.linkNavigationFooter{
+    line-height: 29px;
+}
+.textFooter1{
+    margin-top: 13px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.024em;
+}
+.textFooter2{
+    margin-top: -25px;
+    text-align: right;
+}
+.contactsBlockFooter{
+    margin-top: 20px; 
+    font-size: 25px;
+    line-height: 32px;
+    text-align: right;
+    letter-spacing: 0.013em;
+}
+.quickConsultation3{
+    margin-top: -60px;
+    width: 307px;
+}
+.mail{
+    margin-top: 80px;
+    text-align: right;
+}
+.imgFooter{
+    width: 92px;
+    margin-left: auto;
+}
+.locationBlock{ 
+    padding: 15px 0px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.mail{
+    margin-top: 4px;
+}
+.popup-content {
+    width: 65%;
+}
+.popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    backdrop-filter: blur(30px);
+}
+.popup-content input{
+    display: block;
+    margin-left: 95px;
+    margin-bottom: 40px;
+    width: 56%;
+
+}
+.quickConsultation{
+    margin-left: 95px;
+    width: 255px;
+}
+.textUnderButton{
+    margin-left: 95px;
+    width: 255px;
+    font-size: 16px;
+    line-height: 20px;
+}
+}
+
+@media (min-width: 992px){
+    .textFooter2{
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 1024px){
+/*
+ .containerFixed{
+    max-width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+} 
+*/
+#magnify{
+    width: 35%;
+}
+}
+
+@media (min-width: 1199.98px) {
+/*
+ .containerFixed{
+    max-width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+} 
+*/
+#magnify{
+    width: 25%;
+}
+.provideChernivtsi{
+    font-size: 59px;
+    line-height: 70px;
+    letter-spacing: 0.02em;
+}
+
+.mother_with_child{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 772px;
+    min-height: 509px;
+    z-index: -2;
+}
+
+.GoToTheDirectory {
+    margin-top: 42px;
+    padding: 10px;
+    width: 235px;
+    height: 45px;
+    background: #FFF0C7;
+}
+.GoToTheDirectoryText {
+    font-family: Montserrat;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.013em;
+    color: #4A4A4A;
+    opacity: 0.8;
+}
+.GoToTheDirectoryText:hover{
+    color: #FFCA0F;
+}
+.contentText{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+.quickConsultationText1{
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.headlines{
+    margin-top: 80px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+}
+.thatsWhyWeText{
+    margin-top: 21px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+.headlinesOne{
+    margin-top: 80px;
+    margin-bottom: 34px;
+}
+.thatsWhyWeBlock1{
+    margin-left: -40px;
+}
+.thatsWhyWeBlock2{
+    margin-left: 50px;
+}   
+.thatsWhyWeBlock3{
+    margin-left: 50px;
+    width: 275px;
+}
+.catalogText{
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.catalogBlock{
+    margin-top: 34px;
+    width: 280px;
+    height: 305px;
+} 
+.catalogLines{
+    height: 75px;
+    padding: 0px 10px 0px;
+}
+.catalogBlock img{
+    max-height: 230px;
+}
+.catalogPrices{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+ .allAtTheAddressBlock{
+    margin-top: 33px;
+    width: 280px;
+    height: 298px;  
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.showAllBlock{
+    margin-top: 40px;
+    width: 239px;
+    height: 46px;
+}
+.showAll{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+} 
+.SaleBlock{
+    margin-top: 41px;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+.brandyLogo{
+    margin-top: 5rem;
+}
+.brands1{
+    width: 230px;
+    height: 56px;
+}
+.brands2{
+    margin-left: 20px;
+    width: 189px;
+    height: 52px;
+}
+.brands3{
+    margin-left: 65px;
+    width: 190px;
+    height: 56px;
+}
+.brands4{
+    margin-left: 90px;
+    width: 190px;
+    height: 44px;
+}
+.reviews{
+    margin-top: 50px;
+    width: 289px;
+    height: 514px; 
+}
+.headlines{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+}
+.contactsBlock{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+}
+.openingHours{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}  
+.viber{
+    margin-left: 330px;
+    margin-top: 25px;
+}
+.insta{
+    margin-left: 400px;
+    margin-top: -80px; 
+}
+.quickConsultation2{
+    margin-left: 80px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.mapsText{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+.warehouse{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+    margin-bottom: 83px;
+}  
+footer{
+    height: 244px;
+}
+.linkNavigationFooter{
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.linkNavigationFooterFirst{
+    margin-top: 35px;
+}
+.textFooter1{
+    margin-top: 29px;
+    font-size: 25px;
+    line-height: 32px;
+    width: 679px;
+}   
+.textFooter2{
+    margin-left: auto;
+    margin-top: 38px;
+    width: 164px;
+    font-size: 17px;
+    line-height: 20px;
+}
+.contactsBlockFooter{
+    margin-top: 8px;
+    font-size: 25px;
+    line-height: 32px;
+}
+.imgFooter{
+    margin-top: -10px;
+}
+.mail{
+    margin-top: 6px;
+}
+.locationBlock{
+    margin-top: -55px;
+    font-size: 17px;
+    line-height: 20px;
+}
+.popup-content {
+    width: 50%;
+}
+.callYouBack{
+    margin-left: 20px;
+}
+.popup-content input{
+    margin-left: 135px;
+}
+.quickConsultation{
+    margin-left: 180px;
+}
+.textUnderButton{
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 500px;
+    font-size: 17px;
+}
+}
+
+@media (min-width: 1440px){
+/*
+ .containerFixed{
+    max-width: 100%;
+    padding-right: 0%;
+    padding-left: 12.5%;
+     
+} 
+*/
+}
+
+@media (min-width: 1800px) {
+/*
+ .containerFixed{
+    max-width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+} 
+*/
+#magnify {
+    width: 20%;
+}
+section {
+    margin-top: 4rem;
+}
+.provideChernivtsi {
+    font-size: 59px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+    z-index: 1;
+}   
+.contentText{
+    margin-top: 36px;
+    margin-bottom: 22px;
+    font-size: 20px;
+    letter-spacing: 0.013em;
+    line-height: 50px;
+}  
+.contentTextH3 {
+    line-height: 30px;
+}   
+
+.mother_with_child{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 800px;
+    min-height: 579px;
+    z-index: -2;
+}
+
+.headlines{
+    margin-top: 128px;
+    margin-bottom: 50px;
+    font-size: 59px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+}
+.headlinesOne{
+    margin-top: 275px;
+}
+.thatsWhyWeText{
+    margin-top: 14px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}
+.catalogBlock{
+    margin-top: 14px;
+    width: 309px;
+    height: 327px;
+    margin-bottom: 30px;
+} 
+.catalogBlock img{
+    max-height: 309px;
+}
+.catalogLines{
+    height: 82px;
+    padding: 4px 10px 0px;
+}
+.catalogText{
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.catalogPrice{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.showAllBlock{
+    padding: 7px 5px;
+    margin-top: 40px;
+    width: 236px;
+    height: 55px;
+}
+.allAtTheAddressBlock{
+    margin-top: 13px;
+    height: 327px;
+    width: 309px;
+}
+.showAll{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.SaleBlock{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em; 
+}
+.brands1{
+    width: 250px;
+    height: 60px;
+}
+.brands2{
+    width: 207px;
+    height: 56px;
+}
+.brands3{
+    width: 207px;
+    height: 60px;
+}
+.brands4{
+    width: 208px;
+    height: 48px;
+}
+.reviews{
+    width: 309px;
+    height: 550px; 
+}
+.contactsBlock{
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.07em;
+}
+.openingHours{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.013em;
+}
+.viber{
+    margin-left: 350px;
+    margin-top: 25px;
+}
+.insta{
+    margin-left: 450px;
+    margin-top: -80px; 
+}
+.buttonMargin {
+    margin-top:-20px;
+}
+.quickConsultation2{
+    margin-left: 120px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.013em;
+}
+.mapsText{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+.warehouse{
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.013em;
+}
+footer{
+    height: 366px;
+}
+.linkNavigationFooterFirst{
+    margin-top: 45px;
+}
+.linkNavigationFooter {
+    line-height: 1.8;
+}
+.locationBlock{
+    margin-top: -55px;
+    margin-left: 0px;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+}
+.textFooter1{
+    float: right;
+    margin-top: 45px;
+    font-size: 25px;
+    line-height: 32px;
+}
+.textFooter2{
+    margin-top: 55px;
+    margin-left: auto;
+    width: 309px;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.02em;
+}
+.callYouBack{
+    font-size: 18px;
+    line-height: 25px;
+}
+.contactsBlockFooter{
+    margin-top: 41px;
+    font-size: 25px;
+    line-height: 42px;
+}
+.imgFooter{
+    margin-top: 41px;
+}
+.mail{
+    margin-top: -20px;
+    margin-right: 110px; 
+}
+.popup-content {
+    width: 50%;
+    height: 467px;
+}
+.callYouBack{
+    margin-left: -250px;
+    font-size: 48px;
+    line-height: 70px;
+}
+.popup-content input{
+    width: 80%;
+    margin-left: 80px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.quickConsultation{
+    margin-left: 80px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.textUnderButton{
+    margin-top: 25px;
+    margin-left: 80px;
+    width: 500px;
+    font-size: 17px;
+    line-height: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+/* картинка на странице */
+.minimized {
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+
+.minimized:hover {
+    border: 1px solid #FFAD44;
+    overflow: hidden;
+}
+
+/* увеличенная картинка */
+#magnify {
+    display: none;
+    position: fixed;
+    max-width: 80%;
+    height: auto;
+    z-index: 9999;
+}
+
+#magnify img {
+  width: 100%;
+}
+
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
